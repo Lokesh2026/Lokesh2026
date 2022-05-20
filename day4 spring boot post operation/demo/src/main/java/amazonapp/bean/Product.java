@@ -1,5 +1,6 @@
 package amazonapp.bean;
 
+
 import javax.annotation.Generated;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,14 +11,14 @@ import javax.persistence.Table;
 @Entity
 @Table
 public class Product {
-
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	private String productname;
 	private String brandname;
 	private String price;
-
+	
 	public long getId() {
 		return id;
 	}
@@ -42,6 +43,6 @@ public class Product {
 	public void setPrice(String price) {
 		this.price = price;
 	}
-
+	
 
 }
